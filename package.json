@@ -16,9 +16,21 @@
   },
   "keywords": [],
   "author": "",
+  "exports": {
+    ".": {
+      "import": "./esm/index.js",
+      "require": "./cjs/index.js"
+    },
+    "./icons": {
+      "import": "./esm/icons/index.js",
+      "require": "./cjs/icons/index.js"
+    }
+  },
   "license": "ISC",
   "dependencies": {
+    "@elastic/elasticsearch": "^8.15.0",
     "express": "^4.19.2",
+    "mongoose": "^8.5.4",
     "typescript": "^5.5.4"
   },
   "devDependencies": {
